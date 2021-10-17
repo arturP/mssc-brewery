@@ -1,12 +1,10 @@
-package io.artur.spring.springboot.msscbrewery.web.model;
+package io.artur.spring.springboot.msscbrewery.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 import java.util.UUID;
 
 /**
@@ -16,10 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CustomerDto {
+public class Customer {
     private UUID id;
-
-    @NotBlank
-    @Size(min = 3, max = 100)
     private String name;
 }
